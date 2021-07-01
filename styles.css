@@ -1,0 +1,278 @@
+/*Geral HTML*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(248, 248, 248);
+    border: none;
+    background-repeat:no-repeat;
+    background-position:top left;
+    background-attachment:fixed;
+}
+
+body{
+    background-size: cover; 
+    font-size:12px;
+    font-style:normal;
+    font-weight:bold;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 20px 40px;
+    margin-top: 5vh;
+    border-radius: 10px; 
+    
+}
+
+a {
+  font-size: .8rem;
+}
+
+a:hover {
+    color: rgb(73, 25, 80);
+}
+
+/*Login*/
+
+h1{
+text-align: center;
+}
+
+.login-container {
+    background-color: rgb(58, 45, 238);
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}    
+
+    
+main .login-container img{ 
+    width: 100px;
+    display:inline-flex;
+    
+}
+
+
+form {
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    
+}
+
+label{
+    font-weight:bold;
+   
+}
+
+input{
+    border-bottom: 2px rgb(250, 250, 255);
+}
+
+#forgotpassword{
+   
+    text-align: right;
+    display: block;
+}
+
+/*campos do registro*/
+
+#fieldset-campos{
+    border: 0; 
+
+}
+
+body{
+    background-color: rgb(58, 45, 238);
+    font-size: 1em;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 20px 40px;
+    margin-top: 5vh;
+    border-radius: 10px;
+    text-align: center;
+   
+}    
+
+#custom{
+    display: inline-block;
+    color:cyan;
+    margin-left:auto;
+   margin-bottom: 10vh;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+    
+select {
+    color: black;
+    border-radius: 10px;
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: flexbox;
+    background-color:rgb(128, 128, 128)
+     
+}
+
+/*esqueceu a senha*/
+
+#main-container{ 
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        padding: 20px 30px;
+        margin-top: 10vh;
+        border-radius: 10px;
+        text-align: center;
+              
+      }
+
+      label {
+        font-weight: bold;
+        font-size: .8rem;
+      }
+      
+      input {
+        border-bottom: 2px solid #323232;
+        padding: 8px 20px;
+        color: black;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .modal-dialog, .modal-content, h5 {
+        color: black;
+        text-align: center;
+        box-sizing: border-box; 
+        margin-top: 30px;
+        margin-left: auto;
+    
+ }
+      form {
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    #botao{
+        margin-top: 10vh; 
+    }
+      
+        
+/*TELA INICIO*/
+
+
+
+li .nav-link{
+    color: rgb(248, 248, 248);
+    font-weight:bold;
+    font-size: 1em;    
+ 
+}
+
+a.nav-link:hover{
+    background-color: beige;
+    border-radius: 10px;
+    border-color:rgb(138, 100, 50)
+
+}
+  
+#profile{
+     
+ margin-top: 2em;   
+
+}
+
+
+.modal-dialog, .modal-content, h5{
+    color: black;
+    text-align: center;
+    box-sizing: border-box; 
+    margin-top: 30px;
+    margin-left: auto;
+
+  }
+
+  .row g-4 py-5 row-cols-1 row-cols-lg-3, .feature col .feature-icon bg-primary bg-gradient
+  , .icon-link{
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center; 
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+#idade{
+    width: 8em;
+    margin-right: 50%;
+
+}
+
+#imagem img {
+    width: 72px;
+    margin-left: 0.2rem; 
+}
+
+/*tela controle calórico*/
+
+body{
+    width: 100;
+    
+}
+
+.content{
+    margin-top: 15px;
+    margin: auto;
+    display:inline-block
+}
+
+h1{
+    text-align: center;
+    color: aqua;
+    margin-bottom: 10vh;
+}
+
+table {
+    font-weight: 400;
+    min-width: 420px;
+    width: 100%;
+    }
+
+th {
+    padding: 10px;
+    text-align: center;
+  }
+
+td img {
+text-align: center;
+  
+}
+
+main .content img{
+
+    width: 24px;
+    margin-bottom: 50px;
+}
+
+.center{
+    text-align: center;
+  
+}

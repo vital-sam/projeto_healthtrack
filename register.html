@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <fieldset class="Campos">
+        <form action="">
+            <div class="col-12">
+                <label for="email">Digite Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="email para cadastrado" required />
+                <label for="pwd">Digite Senha:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="senha para cadastrado" required />
+        </form>
+        </div>
+    </fieldset>
+    <fieldset class="Campos">
+        <header id="custom">
+            Dados Cadastrais
+        </header id="custom">
+        <div class="opcao">
+            <p><label for=>Pessoa:</label></p>
+            <br>
+            <label>
+                <input type="radio" name="text" value="normal">Física
+            </label>
+            <label>
+                <input type="radio" name="text" value="empresa">Jurídica
+            </label>
+            <br>
+        </div>
+
+        <div class="opcao">
+            <label>Gênero:</label>
+            <select id="sexo">
+                <option selected disables value="">Selecione</option>
+                <option value="homo">Homosexual</option>
+                <option value="Bi">Bissexual</option>
+                <option value="Pan">Pansexual</option>
+                <option value="Hetero">Heterosexual</option>
+                <input type="text" class="form-control" id="Nome" placeholder="Outro genero" />
+            </select>
+        </div>
+        <div class="opcao">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="Nome" placeholder="Nome Completo" required />
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="1" required>
+            <p></p>
+            <label for="cor">Etnia/cor:</label>
+            <input type="text" class="form-control" id="cor" placeholder="como se identifica" />
+            <div class="form-group col-md-4">
+                <label>Celular:</label>
+                <input type="text" class="form-control" onkeypress="$(this).mask('(00) 0000-00009')">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>CPF:</label>
+                    <input type="text" class="form-control" onkeypress="$(this).mask('000.000.000-00');">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>CNPJ:</label>
+                    <input type="text" class="form-control" onkeypress="$(this).mask('00.000.000/0000-00')">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Altura:</label>
+                        <input type="text" class="form-control" maxlength="3"
+                            onkeypress="$(this).mask('9,00'), {reverse: true};">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>Peso:</label>
+                            <input type="text" class="form-control" maxlength="4"
+                                onkeypress="$(this).mask('90,0'), {reverse: true};">
+                        </div>
+                    </div>
+    </fieldset>
+    <fieldset class="Campos">
+        <header id="custom">
+            Endereço
+        </header id="custom">
+        <div class="opcao">
+            <label for="rua">Logradouro:</label>
+            <input type="text" class="form-control" id="estado" />
+            <label for="bairro">Bairro:</label>
+            <input type="text" class="form-control" id="bairro" />
+            <div class="form-group col-md-4">
+                <label>CEP</label>
+                <input type="text" class="form-control" onkeypress="$(this).mask('00.000-000')">
+            </div>
+            <label>Estado:</label>
+            <form id="estado" method="POST">
+                <select>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </form>
+        </div>
+    </fieldset>
+    <fieldset class="Campos">
+        <header id="custom">
+            Atividade Física
+        </header id="custom">
+
+        <label>Modalidade:</label>
+        <select id="modalidade" name="atividade">
+            <option value="Luta">Artes Marcias</option>
+            <option value="Musculacao">Hipertrofia</option>
+            <option value="Equilibrio" selected>Yoga/Pilates</option>
+            <option value="Natação">hidroginástica</option>
+            <input type="text" class="form-control" id="esporte" placeholder="Outra atividade" />
+        </select>
+
+        <div id="Frequenciahelp" class="form-text">Qual frequência realiza exercícios físicos?</div>
+        <select id="Frequencia" name="atividade">
+            <form id="esporte" method="POST">
+                <option value="1x">Quase não vou (1x)</option>
+                <option value="3x">Gosto de ir (3x)</option>
+                <option value="5x" selected>Só Fds que descanso (5x)</option>
+                <option value="7x">Vou todos os dias (7x)</option>
+        </select>
+        </form>
+        <label>Tipo/Treino:</label>
+        <form id="serie" method="POST">
+            <select id="serie" name="atividade">
+                <option value="P">Potência</option>
+                <option value="F">Força</option>
+                <option value="H" selected>HIT</option>
+                <option value="R">Resistência</option>
+                <input type="text" class="form-control" id="esporte" placeholder="Outro treino" />
+
+            </select>
+        </form>
+
+    </fieldset>
+
+    <div class="d-grid gap-2 col-6 mx-auto" id="botao">
+      <a href="initial.html" class="btn btn-primary" type="button">Criar conta</a>
+    </div>
+
+</body>
+
+</html>
